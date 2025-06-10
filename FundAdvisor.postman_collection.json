@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "b3a13066-ccc5-4e2a-88dc-2dc289402423",
+		"name": "FundAdvisor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45732226",
+		"_collection_link": "https://ericanto-8375237.postman.co/workspace/Eric-Anto's-Workspace~ebf2a3e5-b40c-4b5c-8fac-b8982e9a11b5/collection/45732226-b3a13066-ccc5-4e2a-88dc-2dc289402423?action=share&source=collection_link&creator=45732226"
+	},
+	"item": [
+		{
+			"name": "All APIs",
+			"item": [
+				{
+					"name": "onboarding",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"phone_number\": \"1111111112\"\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/onboarding",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"onboarding"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "i am a student",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "basic_update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"phone_number\": \"1111111112\",\r\n        \"name\": \"Anto\",\r\n        \"dob\": \"1988-06-15\",\r\n        \"pan\": \"AC6345NJ98\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/basic_update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"basic_update"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "i am a student",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "risk_update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"phone_number\": \"1111111112\",\r\n        \"risk\": \"High\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/risk_update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"risk_update"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "i am a student",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_goal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"phone_number\": \"1111111112\",\r\n        \"goal_name\": \"Travel to Bali2\",\r\n        \"current_amount\": 100000,\r\n        \"target_amount\": 200000,\r\n        \"target_date\": \"2029-01-31\"\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/create_goal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"create_goal"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "i am a student",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "link_fund",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"phone_number\": \"1111111112\",\r\n        \"goal_id\": 8,\r\n        \"fund_name\": \"Navi Nifty 500 Multicap 50:25:25 Index Reg-G\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/link_fund",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"link_fund"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "i am a student",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
